@@ -31,7 +31,7 @@ public class Tutor {
     private String telefone;
 
     @Column
-    private String senha;
+    private String senha;// futura feature de autenticação e autorização
 
     @OneToMany(mappedBy = "tutor")
     @Builder.Default

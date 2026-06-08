@@ -10,7 +10,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/**
+ * Controlador responsável pelas operações de Adoçoes.
+ */
 @RestController
 @RequestMapping("/adocoes")
 @RequiredArgsConstructor

@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controlador responsável pelas operações de Pets.
+ */
 @RestController
 @RequestMapping("/pets")
 @RequiredArgsConstructor
