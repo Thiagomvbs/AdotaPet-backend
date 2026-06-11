@@ -1,0 +1,385 @@
+{
+  "info": {
+    "_postman_id": "3aa7cb61-f20a-4224-9b41-25f28ecba8b3",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34109532",
+    "_collection_link": "https://go.postman.co/collection/34109532-3aa7cb61-f20a-4224-9b41-25f28ecba8b3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Pets",
+      "item": [
+        {
+          "name": "Listar Pets",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/pets",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pets"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Pet por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/pets/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pets",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cadastrar Pet",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"Lupe\",\r\n  \"especie\": \"Cachorro\",\r\n  \"raca\": \"Labrador\",\r\n  \"idade\": 3,\r\n  \"descricao\": \"Cachorro dócil e brincalhão\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/pets",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pets"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar Pet",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"Lupe Atualizado\",\r\n  \"especie\": \"Cachorro\",\r\n  \"raca\": \"Golden Retriever\",\r\n  \"idade\": 4,\r\n  \"descricao\": \"Pet atualizado pelo Postman\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/pets/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pets",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deletar Pet",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/pets/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "pets",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Tutor",
+      "item": [
+        {
+          "name": "Listar Tutores",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"Lupe\",\r\n  \"especie\": \"Cachorro\",\r\n  \"raca\": \"Labrador\",\r\n  \"idade\": 3,\r\n  \"descricao\": \"Cachorro dócil e brincalhão\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/tutores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "tutores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Tutor por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/tutores/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "tutores",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cadastrar Tutor",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"Fernando Costa\",\r\n  \"email\": \"fernando@email.com\",\r\n  \"cpf\": \"123.456.789-00\",\r\n  \"telefone\": \"(21) 99999-9999\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/tutores",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "tutores"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Atualizar Tutor",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nome\": \"Fernando Costa Atualizado\",\r\n  \"email\": \"fernando.atualizado@email.com\",\r\n  \"cpf\": \"123.456.789-00\",\r\n  \"telefone\": \"(21) 98888-8888\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/tutores/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "tutores",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Deletar Tutor",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/tutores/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "tutores",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Adocao",
+      "item": [
+        {
+          "name": "Solicitar Adoção",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"tutorId\": 1,\r\n  \"petId\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/adocoes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "adocoes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Adoções",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/adocoes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "adocoes"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar Adoção por ID",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"tutorId\": 1,\r\n  \"petId\": 2\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/adocoes/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "adocoes",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Aprovar Adoção",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/adocoes/2/aprovar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "adocoes",
+                "2",
+                "aprovar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Recusar Adoção",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"tutorId\": 1,\r\n  \"petId\": 2\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/adocoes/2/recusar",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "adocoes",
+                "2",
+                "recusar"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
