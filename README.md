@@ -34,7 +34,7 @@ O objetivo do projeto é demonstrar os conceitos de:
 
 ## Banco de Dados
 
-* MySQL
+* PostgreSQL
 
 ## Ferramentas
 
@@ -144,7 +144,7 @@ git clone https://github.com/SEU-USUARIO/AdotaPet-Backend.git
 ## 2. Criar o Banco de Dados
 
 ```sql
-CREATE DATABASE adota_pet;
+CREATE DATABASE adocao_pet;
 ```
 
 ---
@@ -152,7 +152,7 @@ CREATE DATABASE adota_pet;
 ## 3. Configurar o application.properties
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/adota_pet
+spring.datasource.url=jdbc:mysql://localhost:5432/adocao_pet
 spring.datasource.username=root
 spring.datasource.password=sua_senha
 
@@ -231,71 +231,11 @@ https://github.com/SEU-USUARIO/AdotaPet-Backend/blob/main/postman/AdotaPet.postm
 
 ---
 
-# 📷 Evidências dos Testes
-
-## Cadastro de Pet
-
-![Cadastro de Pet](images/postman/post-pet.png)
-
----
-
-## Atualização de Pet
-
-![Atualização de Pet](images/postman/put-pet.png)
-
----
-
-## Exclusão de Pet
-
-![Exclusão de Pet](images/postman/delete-pet.png)
-
----
-
-## Cadastro de Tutor
-
-![Cadastro de Tutor](images/postman/post-tutor.png)
-
----
-
-## Atualização de Tutor
-
-![Atualização de Tutor](images/postman/put-tutor.png)
-
----
-
-## Solicitação de Adoção
-
-![Solicitação de Adoção](images/postman/post-adocao.png)
-
----
-
-## Aprovação de Adoção
-
-![Aprovação de Adoção](images/postman/aprovar-adocao.png)
-
----
-
-## Recusa de Adoção
-
-![Recusa de Adoção](images/postman/recusar-adocao.png)
-
----
 
 # 📁 Estrutura Recomendada para Evidências
 
 ```text
 AdotaPet-Backend
-│
-├── images
-│   └── postman
-│       ├── post-pet.png
-│       ├── put-pet.png
-│       ├── delete-pet.png
-│       ├── post-tutor.png
-│       ├── put-tutor.png
-│       ├── post-adocao.png
-│       ├── aprovar-adocao.png
-│       └── recusar-adocao.png
 │
 ├── postman
 │   └── AdotaPet.postman_collection.json
@@ -318,9 +258,5 @@ AdotaPet-Backend
 * Comunicação via HTTP
 
 ---
-
-# 👨‍💻 Autor
-
-Thiago Monteiro Villas
 
 Projeto desenvolvido para a disciplina de Sistemas Distribuídos e Mobile.
