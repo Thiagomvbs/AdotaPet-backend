@@ -35,6 +35,8 @@ O objetivo do projeto é demonstrar os conceitos de:
 ## Banco de Dados
 
 * PostgreSQL
+OS SCRIPTS SQL ESTÃO NESSA PASTA
+* src/main/resources/db/migration
 
 ## Ferramentas
 
